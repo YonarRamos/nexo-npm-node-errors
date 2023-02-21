@@ -1,5 +1,5 @@
 
-class CustomError extends Error {
+class CustomErrorClass extends Error {
 
     constructor(error)
     {
@@ -24,5 +24,5 @@ CustomException.prototype.stack = this.stack;
 */
 
 module.exports = {
-    CustomError: CustomError,
+    CustomError: CustomErrorClass,
 };

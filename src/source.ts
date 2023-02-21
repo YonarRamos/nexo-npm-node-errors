@@ -1,7 +1,9 @@
 const {RuntimeError} = require("./exceptions/RuntimeError");
 
-class Source
+class SourceClass
 {
+    errors:{}
+    source:any
     constructor() {
         this.errors = { };
     }
@@ -30,7 +32,10 @@ class Source
     }
 }
 
-exports.Source = Source
+module.exports = {
+    Source: SourceClass,
+};
+
 
 
 
